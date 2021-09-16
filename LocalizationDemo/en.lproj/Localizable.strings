@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  LocalizationDemo
+
+  Created by Italo Boss Lima Carvalho on 16/09/21.
+*/
+
+// Labels
+"ViewController.Label.Icon" = "🐟";
+"ViewController.Label.Title" = "If I am a fish...";
+"ViewController.Label.Body" = "And Lia is a fish.\nIs Karina a fish?";
+
+// Buttons
+"ViewController.Button.Confirm" = "Yes";
+"ViewController.Button.Deny" = "No";
+
+"ViewController.Message.Correct" = "YEAH! You're right!";
+"ViewController.Message.Wrong" = "Too bad... You were wrong! :(";

@@ -27,23 +27,39 @@ class ViewController: UIViewController {
 
     func setupViews() {
         // Set text for our views
+        iconLabel.text = NSLocalizedString("ViewController.Label.Icon", comment: "Fish icon")
+        titleLabel.text = NSLocalizedString("ViewController.Label.Title", comment: "")
+        bodyLabel.text = NSLocalizedString("ViewController.Label.Body", comment: "")
+
+        let confirmButtonTitle = NSLocalizedString("ViewController.Button.Confirm", comment: "")
+        confirmButton.setTitle(confirmButtonTitle, for: .normal)
+
+        let denyButtonTitle = NSLocalizedString("ViewController.Button.Deny", comment: "")
+        denyButton.setTitle(denyButtonTitle, for: .normal)
     }
 
     // MARK: - Actions
 
     @IBAction func didTapConfirmButton(_ sender: Any) {
+        checkUsersAnswer(isConfirmed: true)
     }
 
     @IBAction func didTapDenyButton(_ sender: Any) {
+        checkUsersAnswer(isConfirmed: false)
     }
 
     private func checkUsersAnswer(isConfirmed: Bool) {
         let fishCalc = FishCalc()
+        let message: String
+
         if fishCalc.check(answer: isConfirmed) {
             // Show message that the user got it right
+            message = NSLocalizedString("ViewController.Message.Correct", comment: "")
         } else {
             // Show message that the user got it wrong
+            message = NSLocalizedString("ViewController.Message.Wrong", comment: "")
         }
+        showResult(with: message)
     }
 
     private func showResult(with message: String) {
