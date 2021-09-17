@@ -27,14 +27,14 @@ class ViewController: UIViewController {
 
     func setupViews() {
         // Set text for our views
-        iconLabel.text = NSLocalizedString("ViewController.Label.Icon", comment: "Fish icon")
-        titleLabel.text = NSLocalizedString("ViewController.Label.Title", comment: "")
-        bodyLabel.text = NSLocalizedString("ViewController.Label.Body", comment: "")
+        iconLabel.text = LocalizableStrings.viewControllerLabelIcon.localized(comment: "Fish icon")
+        titleLabel.text = LocalizableStrings.viewControllerLabelTitle.localized()
+        bodyLabel.text = LocalizableStrings.viewControllerLabelBody.localized()
 
-        let confirmButtonTitle = NSLocalizedString("ViewController.Button.Confirm", comment: "")
+        let confirmButtonTitle = LocalizableStrings.viewControllerButtonConfirm.localized()
         confirmButton.setTitle(confirmButtonTitle, for: .normal)
 
-        let denyButtonTitle = NSLocalizedString("ViewController.Button.Deny", comment: "")
+        let denyButtonTitle = LocalizableStrings.viewControllerButtonDeny.localized()
         denyButton.setTitle(denyButtonTitle, for: .normal)
     }
 
@@ -54,10 +54,10 @@ class ViewController: UIViewController {
 
         if fishCalc.check(answer: isConfirmed) {
             // Show message that the user got it right
-            message = NSLocalizedString("ViewController.Message.Correct", comment: "")
+            message = LocalizableStrings.viewControllerMessageCorrect.localized()
         } else {
             // Show message that the user got it wrong
-            message = NSLocalizedString("ViewController.Message.Wrong", comment: "")
+            message = LocalizableStrings.viewControllerMessageWrong.localized()
         }
         showResult(with: message)
     }

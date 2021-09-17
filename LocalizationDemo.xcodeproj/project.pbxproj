@@ -15,6 +15,7 @@
 		517D05DF26E93956006B6B96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 517D05DE26E93956006B6B96 /* Assets.xcassets */; };
 		517D05E226E93956006B6B96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 517D05E026E93956006B6B96 /* LaunchScreen.storyboard */; };
 		51EF8A7726F3E067003A3914 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 51EF8A7926F3E067003A3914 /* Localizable.strings */; };
+		51EF8A7C26F4E215003A3914 /* LocalizableStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EF8A7B26F4E214003A3914 /* LocalizableStrings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		517D05E326E93956006B6B96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		51EF8A7826F3E067003A3914 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		51EF8A7A26F3E080003A3914 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		51EF8A7B26F4E214003A3914 /* LocalizableStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableStrings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				517D05E326E93956006B6B96 /* Info.plist */,
 				5120741E26F3D2C2004CAD44 /* FishCalc.swift */,
 				51EF8A7926F3E067003A3914 /* Localizable.strings */,
+				51EF8A7B26F4E214003A3914 /* LocalizableStrings.swift */,
 			);
 			path = LocalizationDemo;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 			files = (
 				517D05DA26E93954006B6B96 /* ViewController.swift in Sources */,
 				517D05D626E93954006B6B96 /* AppDelegate.swift in Sources */,
+				51EF8A7C26F4E215003A3914 /* LocalizableStrings.swift in Sources */,
 				5120741F26F3D2C2004CAD44 /* FishCalc.swift in Sources */,
 				517D05D826E93954006B6B96 /* SceneDelegate.swift in Sources */,
 			);
