@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  LocalizationDemo
+
+  Created by Italo Boss Lima Carvalho on 17/09/21.
+  
+*/
+
+"CFBundleDisplayName" = "Fish Calc";

@@ -16,6 +16,7 @@
 		517D05E226E93956006B6B96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 517D05E026E93956006B6B96 /* LaunchScreen.storyboard */; };
 		51EF8A7726F3E067003A3914 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 51EF8A7926F3E067003A3914 /* Localizable.strings */; };
 		51EF8A7C26F4E215003A3914 /* LocalizableStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EF8A7B26F4E214003A3914 /* LocalizableStrings.swift */; };
+		51EF8A7F26F5163C003A3914 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 51EF8A8126F5163C003A3914 /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,8 @@
 		51EF8A7826F3E067003A3914 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		51EF8A7A26F3E080003A3914 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		51EF8A7B26F4E214003A3914 /* LocalizableStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableStrings.swift; sourceTree = "<group>"; };
+		51EF8A8026F5163C003A3914 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		51EF8A8226F5163F003A3914 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +74,7 @@
 				517D05E026E93956006B6B96 /* LaunchScreen.storyboard */,
 				517D05E326E93956006B6B96 /* Info.plist */,
 				5120741E26F3D2C2004CAD44 /* FishCalc.swift */,
+				51EF8A8126F5163C003A3914 /* InfoPlist.strings */,
 				51EF8A7926F3E067003A3914 /* Localizable.strings */,
 				51EF8A7B26F4E214003A3914 /* LocalizableStrings.swift */,
 			);
@@ -139,6 +143,7 @@
 				51EF8A7726F3E067003A3914 /* Localizable.strings in Resources */,
 				517D05DF26E93956006B6B96 /* Assets.xcassets in Resources */,
 				517D05DD26E93954006B6B96 /* Main.storyboard in Resources */,
+				51EF8A7F26F5163C003A3914 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,6 +188,15 @@
 				51EF8A7A26F3E080003A3914 /* pt-BR */,
 			);
 			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		51EF8A8126F5163C003A3914 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				51EF8A8026F5163C003A3914 /* en */,
+				51EF8A8226F5163F003A3914 /* pt-BR */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -5,6 +5,8 @@
   Created by Italo Boss Lima Carvalho on 16/09/21.
 */
 
+"CFBundleDisplayName" = "Fish Calc";
+
 // Labels
 "ViewController.Label.Icon" = "🐟";
 "ViewController.Label.Title" = "If I am a fish...";
