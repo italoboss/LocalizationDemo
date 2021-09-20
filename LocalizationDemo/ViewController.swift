@@ -11,6 +11,7 @@ class ViewController: UIViewController {
 
     // MARK: - Outlets
 
+    @IBOutlet weak var titleStackView: UIStackView!
     @IBOutlet weak var iconLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var bodyLabel: UILabel!
@@ -23,6 +24,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
+        configureAccessibilityCategory()
+    }
+
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        configureAccessibilityCategory()
     }
 
     func setupViews() {
@@ -36,6 +42,14 @@ class ViewController: UIViewController {
 
         let denyButtonTitle = LocalizableStrings.viewControllerButtonDeny.localized()
         denyButton.setTitle(denyButtonTitle, for: .normal)
+    }
+
+    func configureAccessibilityCategory() {
+        if traitCollection.preferredContentSizeCategory.isAccessibilityCategory {
+            titleStackView.axis = .vertical
+        } else {
+            titleStackView.axis = .horizontal
+        }
     }
 
     // MARK: - Actions
